@@ -1,0 +1,20 @@
+{
+    "repository": "@playplay/design-tokens",
+    "head": "dev",
+    "base": "main",
+    "rules": [{
+        "name": "Design Tokens / Colors",
+        "path": "assets/styles/variables/colors.scss",
+        "filter": {
+            "types": ["color"]
+        },
+        "parsers": [{
+            "name": "to-css-custom-properties",
+            "options": {
+                "formatTokens": {
+                    "color": "hsl"
+                }
+            }
+        }]
+    }]
+}
