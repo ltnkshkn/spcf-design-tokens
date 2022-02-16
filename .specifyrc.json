@@ -9,7 +9,11 @@
             "types": ["color"]
         },
         "parsers": [{
-            "name": "to-style-dictionary"
+            "name": "to-style-dictionary",
+            "options": {
+                "fontSizeFormat": "px"
+            }
+
         }]
     }]
 }
