@@ -6,7 +6,7 @@
         "name": "Design Tokens / Colors",
         "path": "assets/styles/variables/",
         "filter": {
-            "types": ["color"]
+            "types": ["color", "measurement", "shadow", "textStyle"]
         },
         "parsers": [{
             "name": "to-style-dictionary",
