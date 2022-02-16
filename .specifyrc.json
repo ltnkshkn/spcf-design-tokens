@@ -9,7 +9,7 @@
             "types": ["color"]
         },
         "parsers": [{
-            "name": "to-css-custom-properties",
+            "name": "to-style-dictionary",
             "options": {
                 "formatTokens": {
                     "color": "hsl"
