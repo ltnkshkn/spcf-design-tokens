@@ -4,17 +4,16 @@
     "base": "main",
     "rules": [{
         "name": "Design Tokens / Colors",
-        "path": "assets/styles/variables/colors.scss",
+        "path": "assets/styles/variables/",
         "filter": {
             "types": ["color"]
         },
         "parsers": [{
-            "name": "to-scss-map",
+            "name": "to-style-dictionary",
             "options": {
-                "formatTokens": {
-                    "color": "hsl"
-                }
+                "fontSizeFormat": "px"
             }
+
         }]
     }]
 }
