@@ -9,11 +9,11 @@
                 "types": ["color"]
             },
             "parsers": [{
-                    "name": "to-style-dictionary",
-                    "options": "formatTokens": {
-                        "color": "hsl"
-                    }
-                }
+                    "name": "to-scss-map",
+                    "options": {
+                        "formatTokens": {
+                            "color": "hsl"
+                        }
+                    }]
             }]
-    }]
-}
+    }
