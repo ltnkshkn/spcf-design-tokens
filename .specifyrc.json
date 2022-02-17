@@ -3,17 +3,34 @@
     "head": "dev",
     "base": "main",
     "rules": [{
-        "name": "Design Tokens / Colors",
-        "path": "assets/styles/variables/",
-        "filter": {
-            "types": ["color", "measurement", "shadow", "textStyle"]
-        },
-        "parsers": [{
-            "name": "to-style-dictionary",
-            "options": {
-                "fontSizeFormat": "px"
-            }
+            "name": "Design Tokens JSON",
+            "path": "assets/styles/json/",
+            "filter": {
+                "types": ["color", "measurement", "shadow", "textStyle"]
+            },
+            "parsers": [{
+                "name": "to-style-dictionary",
+                "options": {
+                    "fontSizeFormat": "px"
+                }
 
-        }]
-    }]
+            }]
+        },
+        {
+            "name": "Design Tokens CSS",
+            "path": "assets/styles/variables/",
+            "filter": {
+                "types": ["color", "measurement", "shadow", "textStyle"]
+            },
+            "parsers": [{
+                "name": "to-css-custom-properties",
+                "options": {
+                    "formatTokens": {
+                        "color": "hsl"
+                    }
+                }
+
+            }]
+        }
+    ]
 }
